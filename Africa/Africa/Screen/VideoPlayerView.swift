@@ -6,13 +6,34 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct VideoPlayerView: View {
+    
+    var videoSelected: String
+    var videoTitle: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            VideoPlayer(player: playVideo(fileName: videoSelected, fileExtension: "mp4")) { }
+            .overlay(
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 32, height: 32)
+                    .padding()
+                , alignment: .topLeading
+            )
+        }
+        .tint(.accent)
+        .navigationTitle(videoTitle)
     }
 }
 
 #Preview {
-    VideoPlayerView()
+    NavigationStack {
+        VideoPlayerView(videoSelected: "lion", videoTitle: "Lion ")
+            .navigationBarTitleDisplayMode(.inline )
+    }
 }
