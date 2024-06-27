@@ -10,11 +10,11 @@ import MapKit
 
 struct InsetMapView: View {
         
-    @State private var region = MapCameraPosition.region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 6.600286, longitude: 16.4377599), span: MKCoordinateSpan(latitudeDelta: 60.0, longitudeDelta: 60.0)))
+    @State private var mapCameraPostion = MapCameraPosition.region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 6.600286, longitude: 16.4377599), span: MKCoordinateSpan(latitudeDelta: 60.0, longitudeDelta: 60.0)))
 
     var body: some View {
 
-        Map(position: $region)
+        Map(position: $mapCameraPostion)
             .overlay(
                 
                 NavigationLink(destination: MapView()) {

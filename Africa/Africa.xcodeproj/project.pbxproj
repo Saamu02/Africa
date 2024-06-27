@@ -11,6 +11,8 @@
 		046C37662C2C93A1007A0AD2 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C37652C2C93A1007A0AD2 /* VideoListItemView.swift */; };
 		046C37682C2CEC01007A0AD2 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C37672C2CEC01007A0AD2 /* VideoPlayerView.swift */; };
 		046C376B2C2CED5C007A0AD2 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C376A2C2CED5C007A0AD2 /* VideoPlayerHelper.swift */; };
+		046C376D2C2CF50D007A0AD2 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C376C2C2CF50D007A0AD2 /* LocationModel.swift */; };
+		046C37712C2CFF4C007A0AD2 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C37702C2CFF4C007A0AD2 /* MapAnnotationView.swift */; };
 		0474C3242C2C0FAC00C860A2 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474C3232C2C0FAC00C860A2 /* AfricaApp.swift */; };
 		0474C3262C2C0FAC00C860A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474C3252C2C0FAC00C860A2 /* ContentView.swift */; };
 		0474C3282C2C0FAD00C860A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0474C3272C2C0FAD00C860A2 /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		046C37652C2C93A1007A0AD2 /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		046C37672C2CEC01007A0AD2 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		046C376A2C2CED5C007A0AD2 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
+		046C376C2C2CF50D007A0AD2 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		046C37702C2CFF4C007A0AD2 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		0474C3202C2C0FAC00C860A2 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0474C3232C2C0FAC00C860A2 /* AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaApp.swift; sourceTree = "<group>"; };
 		0474C3252C2C0FAC00C860A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				0474C34F2C2C1F1B00C860A2 /* Main */,
-				04A6CAF72C2C2F6200668676 /* View */,
 				0474C3502C2C1F2200C860A2 /* Screen */,
+				04A6CAF72C2C2F6200668676 /* View */,
 				04A6CAFA2C2C318D00668676 /* Model */,
 				0474C3462C2C1EE300C860A2 /* Data */,
 				046C37692C2CED45007A0AD2 /* Helper */,
@@ -210,6 +214,7 @@
 				04A6CB0E2C2C730400668676 /* InsetMapView.swift */,
 				04A6CB102C2C8E3500668676 /* ExternalWeblinkView.swift */,
 				046C37652C2C93A1007A0AD2 /* VideoListItemView.swift */,
+				046C37702C2CFF4C007A0AD2 /* MapAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				04A6CAFB2C2C31AE00668676 /* CoverImageModel.swift */,
 				04A6CB042C2C489900668676 /* AnimalModel.swift */,
 				046C37632C2C930F007A0AD2 /* VideoModel.swift */,
+				046C376C2C2CF50D007A0AD2 /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,9 +335,11 @@
 				046C376B2C2CED5C007A0AD2 /* VideoPlayerHelper.swift in Sources */,
 				04A6CAFC2C2C31AE00668676 /* CoverImageModel.swift in Sources */,
 				04A6CB0F2C2C730400668676 /* InsetMapView.swift in Sources */,
+				046C37712C2CFF4C007A0AD2 /* MapAnnotationView.swift in Sources */,
 				04A6CAF22C2C244300668676 /* MapView.swift in Sources */,
 				0474C3242C2C0FAC00C860A2 /* AfricaApp.swift in Sources */,
 				046C37642C2C930F007A0AD2 /* VideoModel.swift in Sources */,
+				046C376D2C2CF50D007A0AD2 /* LocationModel.swift in Sources */,
 				04A6CAF02C2C242A00668676 /* VideoListView.swift in Sources */,
 				04A6CB0B2C2C67E100668676 /* InsetGalleryView.swift in Sources */,
 				04A6CAF42C2C246D00668676 /* GalleryView.swift in Sources */,
