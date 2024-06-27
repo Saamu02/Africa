@@ -22,7 +22,7 @@ struct MainView: View {
             VideoListView()
                 .tabItem {
                     Image(systemName: "play.rectangle")
-                    Text("Watch ")
+                    Text("Watch")
                 }
 
             MapView()

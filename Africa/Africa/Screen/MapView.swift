@@ -27,7 +27,7 @@ struct MapView: View {
     @State private var latitude = 6.600286
     @State private var longitude = 6.600286
 
-     var body: some View {
+      var body: some View {
         
         Map(position: $mapCameraPostion) {
             
