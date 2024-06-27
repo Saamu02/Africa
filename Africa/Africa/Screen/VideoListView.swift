@@ -15,7 +15,7 @@ struct VideoListView: View {
     
     var body: some View {
         
-        NavigationStack {
+        NavigationSplitView {
             
             List {
                 ForEach(videos) { video in
@@ -38,8 +38,13 @@ struct VideoListView: View {
                     }, label: {
                         Image(systemName: "arrow.2.squarepath")
                     })
+                    
                 }
             }
+            .tint(.gray)
+            
+        } detail: {
+            EmptyView()
         }
     }
 }

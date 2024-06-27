@@ -40,8 +40,8 @@ struct ContentView: View {
     }
     
     var body: some View {
-        
-        NavigationStack {
+
+        NavigationSplitView {
             
             Group {
                 
@@ -61,6 +61,7 @@ struct ContentView: View {
                             .listRowBackground(Color.clear)
                         }
                     }
+                    .tint(.gray)
                     
                 } else {
                     
@@ -117,7 +118,89 @@ struct ContentView: View {
                     }
                 }
             }
+            
+        } detail: {
+            EmptyView()
         }
+
+        
+//        NavigationStack {
+//
+//            Group {
+//                
+//                if !isGridViewActive {
+//                    
+//                    List {
+//                        CoverImageView()
+//                            .frame(height: 300)
+//                            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+//                        
+//                        
+//                        ForEach(animals) { animal in
+//                            
+//                            NavigationLink(destination: AnimalDetailView(animal: animal)) {
+//                                AnimalListItemView(animal: animal)
+//                            }
+//                            .listRowBackground(Color.clear)
+//                        }
+//                    }
+//                    
+//                } else {
+//                    
+//                    ScrollView(.vertical) {
+//                        
+//                        LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+//                            
+//                            ForEach(animals) { animal in
+//                                
+//                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+//                                    AnimalGridItemView(animal: animal)
+//                                }
+//                            }
+//                        }
+//                        .padding()
+//                        .onAppear {
+//                            gridSwitch()
+//                        }
+//                    }
+//                    .scrollIndicators(.hidden)
+//                }
+//            }
+//            .navigationTitle("Africa")
+//            .navigationBarTitleDisplayMode(.large)
+//            .toolbar {
+//                
+//                ToolbarItem(placement: .topBarTrailing) {
+//                    
+//                    HStack(spacing: 16)  {
+//                        
+//                        Button(action: {
+//                            isGridViewActive = false
+//                            hapticFeedBack.notificationOccurred(.success)
+//                            
+//                        }, label: {
+//                            Image(systemName: "square.fill.text.grid.1x2")
+//                                .font(.title2)
+//                                .foregroundStyle(isGridViewActive ? .primary : Color.accent )
+//                        })
+//                        
+//                        Button(action: {
+//                            isGridViewActive = true
+//                            hapticFeedBack.notificationOccurred(.success)
+//                            
+//                            withAnimation(.easeIn) {
+//                                 gridSwitch()
+//                            }
+//                            
+//                        }, label: {
+//                            Image(systemName: toolbarIcon)
+//                                .font(.title2)
+//                                .foregroundStyle(isGridViewActive ? .accent : .primary)
+//                        })
+//                    }
+//                }
+//            }
+//        }
     }
 }
 
