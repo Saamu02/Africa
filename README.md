@@ -60,6 +60,12 @@ https://github.com/Saamu02/Africa/assets/126147404/ccf93685-df79-435f-bca7-38a8a
 
 https://github.com/Saamu02/Africa/assets/126147404/d98f42c9-e78e-430e-be11-4443b343d99b
 
+##
+
+## Sticker Extension:
+<img src="https://github.com/Saamu02/Africa/assets/126147404/5c93cba0-4a25-4a1a-925b-f6de82a64947" width="150" />
+
+
 ## 
 ##
 
