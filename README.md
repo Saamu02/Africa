@@ -1,7 +1,7 @@
 # Africa
 App 5: App made with SwiftUI for iOS and macOS using macOS catalyst
 
-# Learning Points:
+# Important Points:
 - Created tabView
 - Use of generics (generics allows us to write a code that is capable of working with different types)
 - Mapkit Framework
